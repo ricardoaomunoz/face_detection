@@ -4,6 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+# def drar_point(image, detection_results):
+#   face_landmarks_list = detection_result.face_landmarks
+#   annotated_image = np.copy(rgb_image)
+#   for idx in range(len(face_landmarks_list)):
+#     nose = (int(idx[1]))
+#     cv2.circle(image, nose, 8, (0,0,255), -1)    
+  
 def draw_landmarks_on_image(rgb_image, detection_result):
   face_landmarks_list = detection_result.face_landmarks
   annotated_image = np.copy(rgb_image)
